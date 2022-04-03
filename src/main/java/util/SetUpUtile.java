@@ -1,4 +1,4 @@
-package service;
+package util;
 
 import models.Address;
 import models.Company;
@@ -30,5 +30,10 @@ public class SetUpUtile {
         testCompany.setBs("aggregate real-time technologies");
         testUser.setCompany(testCompany);
         return testUser;
+    }
+
+    public User updateUser(User oldUser){
+        oldUser.setUsername("Updated Name");
+        return oldUser;
     }
 }
